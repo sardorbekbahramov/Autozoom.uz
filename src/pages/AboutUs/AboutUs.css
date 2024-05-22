@@ -1,0 +1,145 @@
+p {
+  font-family: AvertaCY, sans-serif;
+  color: #cacaca;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.aboutUs {
+  padding-bottom: 40px;
+  background: #111219;
+  background: linear-gradient(90deg,
+      rgb(17, 18, 25) 0%,
+      rgb(17, 18, 25) 49%,
+      rgba(17, 18, 25, 0.8100490196078431) 68%,
+      rgb(17, 18, 25) 100%);
+  position: relative;
+
+  & img {
+    position: absolute;
+    height: 1000px;
+    object-fit: cover;
+    z-index: -2;
+    width: 100%;
+  }
+
+  .aboutUs-box {
+    padding-top: 50px;
+
+    .aboutUs-top {
+      & h5 {
+        color: #fff9;
+        font-size: 14px;
+      }
+
+      & h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 130%;
+        margin: 70px 0;
+        color: #fff;
+      }
+    }
+
+    .aboutUs-middle {
+      .aboutUs-middle_top {
+        margin-bottom: 50px;
+
+        & h3 {
+          font-size: 30px;
+          line-height: 40px;
+          font-weight: 400;
+          color: #fff;
+          margin-bottom: 20px;
+        }
+      }
+
+      .aboutUs-middle_middle {
+        .aboutUs-middle_middle--title {
+          margin-bottom: 25px;
+
+          & h3 {
+            font-size: 28px;
+            color: #fff;
+          }
+        }
+
+        .aboutUs-middle_middle--description {
+          & span {
+            font-size: 21px;
+            font-weight: 600;
+            color: #fff;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .aboutUs-bottom {
+      margin-top: 60px;
+
+      .aboutUs-bottom_item {
+        & h4 {
+          font-size: 23px;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.container_about {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width:650px) {
+  .aboutUs {
+    .aboutUs-box {
+      .aboutUs-top {
+        & h5 {
+          font-size: 13px;
+        }
+
+        & h2 {
+          font-size: 26px;
+        }
+      }
+
+      .aboutUs-middle {
+        .aboutUs-middle_top {
+          & h3 {
+            font-size: 26px;
+          }
+        }
+
+        .aboutUs-middle_middle {
+          .aboutUs-middle_middle--title {
+
+            & h3 {
+              font-size: 24px;
+            }
+          }
+
+          .aboutUs-middle_middle--description {
+            & span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .aboutUs-bottom {
+
+        .aboutUs-bottom_item {
+          & h4 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

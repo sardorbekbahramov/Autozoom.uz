@@ -1,0 +1,86 @@
+
+/* General styles for Swiper containers */
+.mySwiper {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Styles for each slide in the Swiper */
+.cars-swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; /* Background color for the slide */
+}
+
+/* Styles for images within Swiper slides */
+.cars-swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire container */
+}
+
+/* Additional Swiper container */
+.mySwiper2 {
+    width: 100%;
+    height: 100%; /* Adjust height as needed */
+}
+
+/* Styles for images within the second Swiper */
+.cars-swiper-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire container */
+}
+
+/* Adjust the opacity of inactive slides */
+.mySwiper .cars-swiper {
+    opacity: 0.5;
+}
+
+/* Adjust the opacity of the active slide */
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.cars-swiper-two img{
+    width: 500px;
+    height: 450px;
+    object-fit: initial;
+    margin-top: -50px;
+}
+.cars-swiper{
+    padding: 0 ;
+    margin-bottom: 20px !important;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    cursor: pointer;
+}
+
+.card {
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    transition: .8s ease;
+    box-shadow: rgb(63, 62, 62) 0px 0px 10px;
+}
+

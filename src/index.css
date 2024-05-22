@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(1, 0, 12);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.parent {
+  overflow-y: hidden !important;
+  display: grid !important;
+  grid-template-columns: repeat(9, 1fr) !important;
+  grid-template-rows: repeat(2, 1fr) !important;
+  grid-column-gap: 15px !important;
+  grid-row-gap: 15px !important;
+}
+
+.parent::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.parent::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.parent::-webkit-scrollbar-thumb {
+  background: #3d62dc;
+  border-radius: 5px;
+}
