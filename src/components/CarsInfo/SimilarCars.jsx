@@ -58,7 +58,7 @@ export default function SimilarCars() {
                         / $ {car.price_in_usd}
                       </span>
                     </h3>
-                    <p className="text-white text-[15px] font-light">per day</p>
+                    <p className="text-gray-500 text-[15px] font-light">per day</p>
                 </div>                        
               )}
             </div>

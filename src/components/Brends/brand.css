@@ -1,0 +1,14 @@
+.brand_card {
+    border: 1px solid #575757;
+    height: 260px;
+}
+.brand_card:hover {
+    background-image: linear-gradient(-20deg, #11121A 0%, #525253 270%);
+}
+.brand_img {
+    margin: auto;
+    width: 75%;
+    height: 70%;
+}
+
+

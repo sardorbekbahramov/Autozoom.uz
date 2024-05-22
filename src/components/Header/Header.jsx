@@ -6,7 +6,6 @@ import img3 from "../../assets/images/header4.png";
 import img4 from "../../assets/images/header5.png";
 import { Carousel, initTWE } from "tw-elements";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -14,15 +13,15 @@ const Header = () => {
     initTWE({ Carousel });
   }, []);
   return (
-    <div className="py-[40px] bg-[#111219]">
+    <div className="py-[40px] header_main">
       <div className="my-[40px]">
-        <h3 className="lg:text-[35px] md:text-[32px] sm:text-[30px] ss:text-[29px] xs:text-[28px] text-gray-100 md:font-semibold xs:font-bold text-center">
+        <h3 className="txt lg:text-[35px] md:text-[32px] sm:text-[30px] ss:text-[29px] xs:text-[28px] text-gray-100 md:font-semibold xs:font-bold text-center">
           {t("headerText1")}
         </h3>
-        <h3 className="lg:text-[35px] md:text-[32px] sm:text-[30px] ss:text-[29px] xs:text-[28px] text-gray-100 md:font-semibold xs:font-bold text-center">
+        <h3 className="txt lg:text-[35px] md:text-[32px] sm:text-[30px] ss:text-[29px] xs:text-[28px] text-gray-100 md:font-semibold xs:font-bold text-center">
           {t("headerText2")}
         </h3>
-        <p className="lg:text-[15px] text-gray-100 lg:font-normal text-center">
+        <p className= " txt1 lg:text-[15px] text-gray-100 lg:font-normal text-center">
           {t("headerTextP")}
         </p>
       </div>
@@ -35,54 +34,45 @@ const Header = () => {
           data-twe-ride="carousel"
         >
           <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-            <Link to={"/cars"}>
-              <div
-                className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-item
-                data-twe-carousel-active
-              >
-                <img
-                  src={img1}
-                  className="object-cover m-auto"
-                  alt="Wild Landscape"
-                />
-              </div>
-            </Link>
+            <div
+              className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+              data-twe-carousel-active
+            >
+              <img
+                src={img1}
+                className="object-cover m-auto"
+                alt="Wild Landscape"
+              />
+            </div>
 
-            <Link to={"/cars"}>
-              <div
-                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-item
-              >
-                <img src={img2} className="object-cover m-auto" alt="Camera" />
-              </div>
-            </Link>
+            <div
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img src={img2} className="object-cover m-auto" alt="Camera" />
+            </div>
 
-            <Link to={"/cars"}>
-              <div
-                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-item
-              >
-                <img
-                  src={img3}
-                  className="object-cover m-auto"
-                  alt="Exotic Fruits"
-                />
-              </div>
-            </Link>
-
-            <Link to={"/cars"}>
-              <div
-                className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-item
-              >
-                <img
-                  src={img4}
-                  className="object-cover m-auto"
-                  alt="Exotic Fruits"
-                />
-              </div>
-            </Link>
+            <div
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src={img3}
+                className="object-cover m-auto"
+                alt="Exotic Fruits"
+              />
+            </div>
+            <div
+              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src={img4}
+                className="object-cover m-auto"
+                alt="Exotic Fruits"
+              />
+            </div>
           </div>
         </div>
         {}

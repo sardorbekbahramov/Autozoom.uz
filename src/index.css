@@ -9,7 +9,7 @@
 }
 
 body {
-  background: rgb(1, 0, 12);
+  background: #1E1F27;
 }
 
 .container {
@@ -39,3 +39,16 @@ body {
   background: #3d62dc;
   border-radius: 5px;
 }
+
+.header_main {
+  background-image: linear-gradient(to top, #2b2d3f 0%, #11121A 100%);
+}
+.header_main .txt {
+  letter-spacing: 8px;
+}
+.header_main .txt1 {
+  letter-spacing: 2px;
+  color: rgb(155, 155, 155);
+  font-weight: 600;
+}
+

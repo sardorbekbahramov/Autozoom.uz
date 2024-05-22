@@ -12,7 +12,7 @@ import axios from "axios";
 const Navbar = ({ changeLang }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [brands, setBrands] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [searchTerm, setSearchTerm] = useState("");
   const { t } = useTranslation();
   const urlimg = "https://autoapi.dezinfeksiyatashkent.uz/api/uploads/images/";
 
@@ -69,10 +69,10 @@ const Navbar = ({ changeLang }) => {
               <label className="relative">
                 <IoSearchSharp
                   color="white"
-                  className="top-[-18px] w-10 h-10 left-0  absolute z-10"
+                  className="top-[-20px] w-[22px]  h-10 left-2  absolute z-10"
                 />
                 <input
-                  className="bg-gradient-to-r top-[-20px] text-white font-bold text-[17px]  sm:px-10 py-10 sm:py-2 text-base sm:text-[15px] absolute from-slate-500 rounded-md h-[40px] sm:w-[300px] to-gray-800"
+                  className="bg-gradient-to-r top-[-20px] text-white font-bold text-[17px]  sm:px-10 py-10 sm:py-2 text-base sm:text-[15px] absolute from-slate-600 rounded-md h-[40px] sm:w-[300px] to-gray-900"
                   type="text"
                   placeholder="Search"
                 />
@@ -109,7 +109,7 @@ const Navbar = ({ changeLang }) => {
             <ul className="flex items-center gap-4">
               <li>
                 <Link
-                  className="md:text-[17px]  text-gray-100  hover:text-blue-300"
+                  className="md:text-[17px]  text-gray-100  hover:text-red-500"
                   to="/cars"
                 >
                   {t("cars")}
@@ -117,7 +117,7 @@ const Navbar = ({ changeLang }) => {
               </li>
               <li>
                 <Link
-                  className="md:text-[17px] text-gray-100  hover:text-blue-300"
+                  className="md:text-[17px] text-gray-100  hover:text-red-500"
                   to="/"
                 >
                   <Dropdown
@@ -127,7 +127,7 @@ const Navbar = ({ changeLang }) => {
                         {brands.map((brand) => (
                           <li key={brand.id}>
                             <Link
-                              className="text-[27px] md:text-[30px] text-white flex items-center gap-x-3 hover:text-blue-300"
+                              className="text-[27px] md:text-[30px] text-white flex items-center gap-x-3 hover:text-red-500"
                               to={`/cars/brand/${brand.id}`}
                             >
                               <img
@@ -143,7 +143,7 @@ const Navbar = ({ changeLang }) => {
                     }
                   >
                     <a onClick={(e) => e.preventDefault()}>
-                      <Space className="md:text-[17px]  text-gray-100  hover:text-blue-300">
+                      <Space className="md:text-[17px]  text-gray-100  hover:text-red-500">
                         {t("brand")}
                       </Space>
                     </a>
@@ -152,7 +152,7 @@ const Navbar = ({ changeLang }) => {
               </li>
               <li>
                 <Link
-                  className="md:text-[17px] text-gray-100  hover:text-blue-300"
+                  className="md:text-[17px] text-gray-100  hover:text-red-500"
                   to="/"
                 >
                   {t("service")}
@@ -162,7 +162,7 @@ const Navbar = ({ changeLang }) => {
             <ul className="flex gap-4">
               <li>
                 <Link
-                  className="md:text-[17px] text-gray-100 hover:text-blue-300"
+                  className="md:text-[17px] text-gray-100 hover:text-red-500"
                   to="/aboutUs"
                 >
                   {t("aboutUs.nav")}
@@ -170,7 +170,7 @@ const Navbar = ({ changeLang }) => {
               </li>
               <li>
                 <Link
-                  className="md:text-[17px] text-gray-100  hover:text-blue-300"
+                  className="md:text-[17px] text-gray-100  hover:text-red-500"
                   to="/contact"
                 >
                   {t("contacts.nav")}
@@ -178,7 +178,7 @@ const Navbar = ({ changeLang }) => {
               </li>
               <li>
                 <Link
-                  className="md:text-[17px]  text-gray-100  hover:text-blue-300"
+                  className="md:text-[17px]  text-gray-100  hover:text-red-500"
                   to="/blog"
                 >
                   {t("blogs")}
@@ -203,21 +203,21 @@ const Navbar = ({ changeLang }) => {
         <ul className="flex flex-col gap-4">
           <li>
             <Link
-              className="text-[27px] md:text-[30px] text-white  hover:text-blue-300"
+              className="text-[27px] md:text-[30px] text-white  hover:text-red-600"
               to="/"
             >
               Cars
             </Link>
           </li>
           <li>
-            import axios from "axios";
+            
             <Dropdown
               overlay={
                 <ul className="flex flex-col gap-4">
                   {brands.map((brand) => (
                     <li key={brand.id}>
                       <Link
-                        className="text-[27px] md:text-[30px] text-white  hover:text-blue-300"
+                        className="text-[27px] md:text-[30px] text-white  hover:text-red-600"
                         to={`/brand/${brand.id}`}
                       >
                         {brand.name}
@@ -237,7 +237,7 @@ const Navbar = ({ changeLang }) => {
           </li>
           <li>
             <Link
-              className="text-[27px] md:text-xl text-white  hover:text-blue-300"
+              className="text-[27px] md:text-xl text-white  hover:text-red-300"
               to="/"
             >
               Services
@@ -245,7 +245,7 @@ const Navbar = ({ changeLang }) => {
           </li>
           <li>
             <Link
-              className="text-[27px] md:text-xl text-white  hover:text-blue-300"
+              className="text-[27px] md:text-xl text-white  hover:text-red-300"
               to="/aboutUs"
               onClick={handleLinkClick}
             >
@@ -254,7 +254,7 @@ const Navbar = ({ changeLang }) => {
           </li>
           <li>
             <Link
-              className="text-[27px] md:text-xl text-white  hover:text-blue-300"
+              className="text-[27px] md:text-xl text-white  hover:text-red-300"
               to="/contact"
               onClick={handleLinkClick}
             >
@@ -263,7 +263,7 @@ const Navbar = ({ changeLang }) => {
           </li>
           <li>
             <Link
-              className="text-[27px] md:text-xl text-white  hover:text-blue-300"
+              className="text-[27px] md:text-xl text-white  hover:text-red-300"
               to="/blog"
               onClick={handleLinkClick}
             >

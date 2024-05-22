@@ -1,9 +1,9 @@
 const translationsEn = {
-  cars: "Cars",
-  brand: "Brand",
-  service: "Service",
+  cars: "CARS",
+  brand: "BRAND",
+  service: "SERVICE",
   aboutUs: {
-    nav: "About us",
+    nav: "ABOU US",
     top: {
       toptop: "Luxury and sports car rental / About us",
       topbottom: "About us",
@@ -64,7 +64,7 @@ const translationsEn = {
     },
   },
   contacts: {
-    nav: "Contact",
+    nav: "CONTACT",
     contact_title: {
       top: "Luxury and sports car rental / Contacts",
       title: "OUR CONTACTS",
@@ -74,7 +74,7 @@ const translationsEn = {
       title: "Main office",
     },
   },
-  blogs: "Blog",
+  blogs: "BLOGS",
 
   faq: {
     rowOne: {

@@ -89,7 +89,7 @@ export default function CarsInfo() {
         <div className='container'>
             {cars &&
                 cars.map((item, index) => (
-                    <h2 key={index} className='text-5xl text-white pb-8'> {item?.brand?.title} {item?.model?.name}</h2>
+                    <h2 key={index} className='text-5xl text-white pb-8 pt-6 font-bold'> {item?.brand?.title} {item?.model?.name}</h2>
                 ))}
 
             <Row>
